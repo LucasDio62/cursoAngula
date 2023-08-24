@@ -1,0 +1,20 @@
+<!-- <p *ngIf = 'condition'>ligado</p> -->
+<button (click)="onclick()">desligar</button>
+<p *ngIf="condition">ligado</p>
+<p *ngIf="!condition">desligado</p>
+<ul>
+    <li *ngFor="let list of list; let i = index">[ {{i + 1}} ] {{list.nome}} - idade = {{list.idade}} anos</li>
+</ul>
+<button (click)="addp()">add p</button>
+<input type="text" [(ngModel)]="name">
+<div [ngSwitch]="name">
+    <p *ngSwitchCase="'alice'"> 
+        alice é linda
+    </p>
+    <p *ngSwitchCase="'lucas'">
+        mar o meno
+    </p>
+    <p *ngSwitchDefault>
+        sla
+    </p>
+</div>

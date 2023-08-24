@@ -1,0 +1,13 @@
+<app-input [contador]="addValue"></app-input>
+<button (click)="addv()">add</button>
+<ng-template [ngIf]="getData">
+    <h1>{{getData.nome}}</h1>
+    <h2>{{getData.idade}}</h2>
+</ng-template>
+<app-output (dataEmitner)="setData($event)"></app-output>
+<!-- <app-new-component></app-new-component>
+<app-title title="hyio"></app-title>
+<app-diretivas-atributos><h1>tomate</h1></app-diretivas-atributos>
+<app-diretivas-estrututais></app-diretivas-estrututais>
+<app-data-binding></app-data-binding>
+<router-outlet></router-outlet> -->

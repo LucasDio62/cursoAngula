@@ -1,0 +1,9 @@
+
+<ul *ngFor="let item of list; let i = index">
+    <li>
+        {{item.nome}}-
+        {{item.idade}}
+        {{i + 1}}
+        <button (click)="getData(i)">getData</button>
+    </li>
+</ul>

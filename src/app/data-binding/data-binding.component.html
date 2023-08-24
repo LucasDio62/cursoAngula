@@ -1,0 +1,11 @@
+<p> o nome dele é {{ nome }} e tem {{idade}} anos </p>
+<p>{{idade > 20 }}</p>
+<hr>
+
+<img [src]="dogchorro" [alt]="titleimg">
+<hr>
+<div (mousemove)="cordmouse($event)" style="background-color: brown; width: 300px; height: 300px;"></div>
+{{position.x}} - {{position.y}}
+
+<input [(ngModel)]="nome">
+{{nome}}
