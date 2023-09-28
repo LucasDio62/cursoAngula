@@ -1,0 +1,10 @@
+<ng-content (selector)="h1"></ng-content><!--serve para posicionar o conteudo dentro dele-->
+<p [ngClass]="{'active': valor, 'disable': !valor}">ngClass</p>
+<button [(ngModel)]="value" (click)="mostrar()">{{value}}</button>
+<ng-template [ngIf]="value">
+    <hr>
+    <input [(ngModel)]="nome">
+    <button (click)="salve()">add</button>
+    <li *ngFor="let item of list">{{item.nome | uppercase}}</li>
+</ng-template>
+{{date | date: 'dd/MM/yyyy mm'}}<!--pipes |  ajudar com as interpoleçoes tem algulmas ja prontascomo o uppercase-->

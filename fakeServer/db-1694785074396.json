@@ -1,0 +1,32 @@
+{
+  "list-food": [
+    {
+      "id": 1,
+      "nome": "x bacon"
+    },
+    {
+      "id": 2,
+      "nome": "feijao"
+    },
+    {
+      "id": 3,
+      "nome": "ovo"
+    },
+    {
+      "nome": "bnm,",
+      "id": 4
+    },
+    {
+      "nome": "bnm",
+      "id": 5
+    },
+    {
+      "nome": "hgf",
+      "id": 6
+    },
+    {
+      "nome": "heth",
+      "id": 7
+    }
+  ]
+}

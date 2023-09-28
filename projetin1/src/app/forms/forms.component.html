@@ -1,0 +1,42 @@
+<form #form="ngForm">
+    <label>
+        name:
+        <!-- verifica se o nome esta valido para aparecer o span -->
+        <input type="text" name="nome" #nome="ngModel" [ngModel]="nome.value" required>
+        <span *ngIf="nome.invalid">invalid</span>
+    </label>
+    <br>
+    <br>
+    <label>
+        masculino:
+        <input type="radio" name="nome" value="marculino" ngModel>
+    </label>
+    <label>
+        feminino:
+        <input type="radio" name="sexo" value="feminino" ngModel>
+    </label>
+    <label>
+        outros:
+        <input type="radio" name="sexo" value="outros" ngModel>
+    </label>
+    <label>
+        anos:
+        <input type="range" name="anos" ngModel>
+    </label>
+    <label>
+        angular:
+        <input type="checkbox" name="angular" value="angular" ngModel>
+    </label>
+    <label>
+        react:
+        <input type="checkbox" name="react" value="react" ngModel>
+    </label>
+    <select name="comidas" ngModel>
+        <option value="">selecione uma comida</option>
+        <option *ngFor="let item of listComidas" [ngValue]="item">
+            {{item.comida}} - {{item.preco}}
+        </option>
+    </select>
+    
+</form>
+{{ form.value | json }}
