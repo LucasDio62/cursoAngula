@@ -1,4 +1,4 @@
-<form #form="ngForm">
+<form #form="ngForm" (ngSubmit)="submitForm(form)">
     <label>
         name:
         <!-- verifica se o nome esta valido para aparecer o span -->
@@ -37,6 +37,6 @@
             {{item.comida}} - {{item.preco}}
         </option>
     </select>
-    
+    <button [disabled]="form.invalid">enviar dados</button>
 </form>
 {{ form.value | json }}
